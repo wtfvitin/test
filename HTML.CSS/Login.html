@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Site da Pichau</title>
+  <link rel="stylesheet" href="/CSS/styleLogin.css">
+  <link rel="stylesheet" href="/CSS/menu.css">
+  <!-- Título da página -->
+  <title>Pichau</title>
+  <style>
+    .box {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      justify-content: center;
+      margin-top: 20px;
+    }
+
+    .box input {
+      padding: 10px;
+      margin: 5px 0;
+      font-size: 16px;
+      width: 100%;
+    }
+
+    .nome-sobrenome {
+      display: flex;
+      gap: 10px;
+    }
+
+    .nome-sobrenome input {
+      width: 48%;
+    }
+
+    .cpf-email {
+      display: flex;
+      gap: 10px;
+      width: 100%;
+    }
+
+    .cpf-email input {
+      width: 48%;
+    }
+
+    .box a {
+      font-size: 14px;
+      color: gray;
+    }
+
+    .box input[type="submit"] {
+      background-color: #277dfd;
+      color: white;
+      border: none;
+      padding: 12px;
+      text-align: center;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    .box input[type="submit"]:hover {
+      background-color: #000000;
+    }
+
+    .box h1 {
+      width: 100%;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+
+<body>
+  <form class="box" action="index.html" method="post">
+    <h1>Crie sua conta</h1>
+    <div class="nome-sobrenome">
+      <input type="text" name="Nome" placeholder="Nome" id="Nome">
+      <input type="text" name="Sobrenome" placeholder="Sobrenome" id="Sobrenome">
+    </div>
+
+    <div class="cpf-email">
+      <input type="password" name="CPF" placeholder="CPF" id="CPF">
+      <input type="text" name="E-mail" placeholder="E-mail" id="E-mail">
+    </div>
+
+    <input type="password" name="Senha" placeholder="Senha" id="Senha">
+    <a href="cadastro.html"><font size="2.9px" color="gray"><u>Já tem conta? Entre já</u></font></a>
+    <input type="submit" onclick="logar(); return false">
+  </form>
+
+  <script>
+    function logar() {
+      var login = document.getElementById('login').value;
+      var senha = document.getElementById('senha').value;
+      if (login == "admin" && senha == "admin") {
+        alert('login com sucesso');
+        location.href = "home.html";
+      } else {
+        alert('usuario ou senha incorretos');
+      }
+    }
+  </script>
+
+</body>
+
+<menu>
+  <a href="index.html"><img src="img/Pichau.png" class="logo" width="400px"></a>
+  <center>
+    <div>
+      <form action="https://Google.com/search" method="get" target="_blank">
+        <div class="botoesdireita">
+          <div class="pesquisa">
+            <input type="text" name="q" placeholder="Pesquise aqui...">
+          </div>
+
+          <div class="botao">
+            <input type="submit" value="">
+          </div>
+        </div>
+      </form>
+    </div>
+    <a href="Login.html">
+      <img src="img/Minha Conta.png" height="50px">
+    </a>
+    <a href="#">
+      <img src="img/Quem Somos.png" height="49px">
+    </a>
+  </center>
+</menu>
+
+</html>
+

@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Yatra+One&display=swap');@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Yatra+One&display=swap');
+body{
+    display: flex;
+    background-color: rgb(255, 255, 255);
+}
+
+.containercima{
+    display: flex;
+    width: 1920px;
+    height: 500px;
+    border: 2px solid rgb(255, 255, 255);
+    align-items: center;
+}
+
+.container2{
+    display: flex;
+    width: 205px;
+    height: 430px;
+    border-radius: 10px;
+    margin-left: 23px;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(0, 0, 0, 0.068);
+    transition: transform 0.5s ease, box-shadow 0.3s ease;
+    overflow: hidden;  
+    text-align: center;
+}
+
+.container2:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 16px 16px rgba(0, 0, 0, 0.2);
+}
+
+.containerbaixo{
+    display: flex;
+    width: 1920px;
+    height: 500px;
+    border: 1px solid rgb(255, 255, 255);
+    align-items: center;
+    margin-top: 505px;
+    margin-left: -1888px;
+}
+
+.imagem-produto{
+    display: flex;
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    margin-top: -250px;
+}
+
+.nome-produto{
+    display: flex;
+    font-size: 17px;
+    font-weight: bold;
+    color: #cacaca;
+    position: absolute;
+    margin-top: -20px;
+}
+
+.descricao-produto{
+    font-size: 16px;
+    color: #777;
+    margin-top: 90px;
+    margin-left: 10px;
+    margin-right: 10px;
+    text-align: center;
+    max-width: 180px; 
+    overflow-wrap: break-word;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+.preco-produto{
+    display: flex;
+    font-size: 25px;
+    font-weight: bold;
+    color: #3265f1;
+    margin-top: 230px;
+    position: absolute;
+}
+
+.produto-btn{
+    padding: 8px 16px;
+    background: #1296ca;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    margin-top: 340px;
+    position: absolute;
+    margin-top: 350px;
+    
+} 
+
+.produto-btn:hover{
+    background: #21867a;
+}
